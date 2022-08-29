@@ -1,0 +1,19 @@
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World! How to enumerate an enum, How can you enumerate an enum in C#");
+
+
+ 
+
+foreach (Suit suit in Enum.GetValues<Suit>())
+{
+    Console.WriteLine(suit.ToString());
+
+}
+public enum Suit
+
+{
+    Spades,
+    Hearts,
+    Clubs,
+    Diamonds
+}
